@@ -354,6 +354,8 @@ For inquiries or support, please contact:
 
 ## 📝 License
 
+This project is licensed under the MIT License.
+
 This project is developed as part of the CSAI 202 course at Zewail City University.
 
 ---
