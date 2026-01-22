@@ -1,0 +1,107 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Sign In / Sign Up";
+    
+}
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="~/js/scripts.js" defer></script>
+
+</head>
+
+
+<body>
+<div id="container" class="container">
+    <!-- Form Section -->
+    <div class="row">
+        <!-- Sign Up -->
+        <div class="col align-items-center flex-col sign-up">
+            <div class="form-wrapper">
+                <div class="form sign-up">
+                    <form action="/Home" method="get">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bx-mail-send'></i>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Confirm password" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-cake'></i>
+                            <input type="text" placeholder="Age" required>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                        <p>
+                            <span>Already have an account?</span>
+                            <b onclick="toggle()" class="pointer">Sign In here</b>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Sign Up -->
+        <!-- Sign In -->
+        <div class="col align-items-center flex-col sign-in">
+            <div class="form-wrapper">
+                <div class="form sign-in">
+                    <form action="/Home" method="get">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit">Sign In</button>
+                        <p>
+                            <b>Forgot password?</b>
+                        </p>
+                        <p>
+                            <span>Don't have an account?</span>
+                            <b onclick="toggle()" class="pointer">Sign Up here</b>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Sign In -->
+    </div>
+    <!-- End Form Section -->
+    <!-- Content Section -->
+    <div class="row content-row">
+        <!-- Sign In Content -->
+        <div class="col align-items-center flex-col">
+            <div class="text sign-in">
+                <h2>Welcome</h2>
+                <h2>To Game Nest</h2>
+            </div>
+            <div class="img sign-in">
+                <!-- Add an image here if needed -->
+            </div>
+        </div>
+        <!-- End Sign In Content -->
+        <!-- Sign Up Content -->
+        <div class="col align-items-center flex-col">
+            <div class="img sign-up">
+                <!-- Add an image here if needed -->
+            </div>
+            <div class="text sign-up">
+                <h2>Join With Us</h2>
+            </div>
+        </div>
+        <!-- End Sign Up Content -->
+    </div>
+    <!-- End Content Section -->
+</div>
+</body>

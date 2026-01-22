@@ -1,0 +1,111 @@
+
+.page_games {
+    background-color: black; /* Set the background color of the page to black */
+    padding: 20px; /* Optional: Add padding for spacing */
+}
+
+    .page_games p {
+        color: white; /* Set the text color of all paragraphs to white */
+    }
+
+.catalog-filter {
+    background-color: black; /* Keep the filter section background black */
+    padding: 15px; /* Optional: Add padding for better spacing */
+}
+
+.filter-checkbox p {
+    color: white; /* Make text in the checkboxes white */
+}
+
+.filter-checkbox input {
+    margin-right: 10px; /* Optional: Add spacing between checkbox and label */
+}
+
+
+/* Scrollbar styling for a cohesive look */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #0056b3; /* Blue scrollbar background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #003d80; /* Dark blue scrollbar thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #00264d; /* Even darker blue on hover */
+}
+
+
+.catalog-games {
+    background-color: black; /* Set the background color to black */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+    .catalog-games .game {
+        background-color: black; /* Individual game containers also black */
+        border: 1px solid #444; /* Optional: Add a subtle border for better structure */
+        border-radius: 8px; /* Optional: Rounded corners */
+        margin-bottom: 20px; /* Space between games */
+    }
+
+        .catalog-games .game a {
+            color: white; /* Set text color to white for contrast */
+            text-decoration: none; /* Remove underlines from links */
+        }
+
+        .catalog-games .game h2 {
+            color: white; /* Ensure the game name is visible */
+            font-size: 1.5em; /* Optional: Adjust size for better readability */
+        }
+
+    .catalog-games .price .money p,
+    .catalog-games .price .sale p {
+        color: white; /* Ensure price and sale text are visible */
+    }
+
+    .catalog-games .game_img img {
+        width: 100%; /* Make sure the images are responsive */
+        border-radius: 8px; /* Optional: Rounded corners for the images */
+    }
+
+
+.footer {
+    background-color: black; /* Set the background color of the footer to black */
+    color: white; /* Set the text color to white */
+    padding: 20px; /* Optional: Add padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+    .footer .prava p,
+    .footer p {
+        color: white; /* Ensure all paragraphs in the footer have white text */
+    }
+
+.pay-systems img {
+    max-width: 100%; /* Make sure the payment system image fits within its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.button {
+    background-color: black; /* Set the button's background color to black */
+    color: white; /* Set the text color of the button to white */
+    padding: 10px 20px; /* Optional: Add padding to the button */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+    .button:hover {
+        background-color: #444; /* Optional: Change button color on hover */
+    }
+
+
+.money p {
+    color: black; /* Set the color of the money text to black */
+}
+
+.sale p {
+    color: red; /* Set the color of the sale text to red */
+}
+

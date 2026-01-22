@@ -1,0 +1,335 @@
+﻿@page
+@model GameNest.Pages.HomeModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+
+
+
+
+<div class="hero_area">
+    <!-- Header Section -->
+
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" asp-area="" asp-page="/Home">
+                    <h1 style="color: #1e90ff;">🎮 GameNest</h1>
+                </a>
+              
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-area="" asp-page="/Home">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" asp-area="" asp-page="/Profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Event">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Games">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-page="/Friends">Friends</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+</div>
+    <!-- End Header Section -->
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to <span class="highlight">GameNest</span></h2>
+                <p>Unite with gamers worldwide. Discover games, share experiences, and stay updated!</p>
+
+                <!-- Post Creation Form -->
+                <div class="post-creation">
+                    <h3>Create a Post</h3>
+                    <form id="postForm">
+                        <input type="text" id="postTitle" placeholder="Post Title" required>
+                        <textarea id="postContent" placeholder="Write your post here..." required></textarea>
+                        <button type="submit">Share Post</button>
+                    </form>
+                </div>
+
+                <!-- Posts Section -->
+                <div class="newsfeed">
+                    <h3>Newsfeed</h3>
+                    <div id="postsContainer">
+                        <!-- Posts will appear here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 <span class="highlight">GameNest</span>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const postForm = document.getElementById('postForm');
+        const postsContainer = document.getElementById('postsContainer');
+
+        // Array to hold posts
+        let posts = [
+            { title: "Top 10 Strategy Games of 2024", content: "Check out this list of the best strategy games you must try this year!", likes: 12, comments: ["Amazing!", "Loved it!"], username: "GamerPro123", date: "2024-12-28", time: "10:00 AM" },
+            { title: "How to Fix Crashes in Apex Legends", content: "Here's a detailed guide to troubleshoot crashes in Apex Legends.", likes: 9, comments: ["Thanks for this!", "Very helpful."], username: "FixItFast", date: "2024-12-28", time: "10:30 AM" },
+            { title: "Best Co-Op Games for Friends", content: "Explore these co-op games for hours of fun with your friends.", likes: 7, comments: ["I tried them all!", "Co-op is the best."], username: "GameBuddy", date: "2024-12-28", time: "11:00 AM" },
+            { title: "Graphics Settings Optimization Guide", content: "Maximize FPS and visuals with this guide for any game.", likes: 10, comments: ["Worked like a charm!", "Thanks for the tips!"], username: "FPSMaster", date: "2024-12-28", time: "11:30 AM" },
+            { title: "Most Anticipated RPGs of 2024", content: "These RPGs are sure to amaze you with their stories.", likes: 15, comments: ["Can't wait!", "Take my money!"], username: "RPGFanatic", date: "2024-12-28", time: "12:00 PM" },
+            { title: "Controller Setup for PC Gaming", content: "Learn how to set up controllers for your favorite PC games.", likes: 5, comments: ["Very useful.", "Finally playing comfortably."], username: "TechHelper", date: "2024-12-28", time: "12:30 PM" },
+            { title: "Troubleshooting Error Code 23 in Valorant", content: "Step-by-step fix for Error Code 23 in Valorant.", likes: 8, comments: ["Lifesaver!", "Helped me big time."], username: "ValorantFixer", date: "2024-12-28", time: "1:00 PM" },
+            { title: "Guide to Solo Queue in Dota 2", content: "Master solo queueing and climb the ranks in Dota 2.", likes: 6, comments: ["Ranked is tough!", "Great advice!"], username: "DotaSoloKing", date: "2024-12-28", time: "1:30 PM" },
+            { title: "Upcoming FPS Releases", content: "These first-person shooters are set to dominate 2024.", likes: 14, comments: ["Excited!", "Looks amazing."], username: "FPSAddict", date: "2024-12-28", time: "2:00 PM" },
+            { title: "Fixing Lag in Online Games", content: "Tips to reduce latency and improve your gaming experience.", likes: 9, comments: ["Helped a lot!", "Thanks for this."], username: "LagFixer", date: "2024-12-28", time: "2:30 PM" },
+            { title: "Game Modding for Beginners", content: "Learn how to start modding your favorite games.", likes: 10, comments: ["Very inspiring.", "I'm trying this."], username: "ModMaster", date: "2024-12-28", time: "3:00 PM" },
+            { title: "Easiest Achievements to Unlock", content: "Boost your gamer score with these easy achievements.", likes: 7, comments: ["Great tips!", "Quick and easy."], username: "AchieveItAll", date: "2024-12-28", time: "3:30 PM" },
+            { title: "What to Expect from the Next Call of Duty", content: "A sneak peek into the features of the next COD game.", likes: 13, comments: ["So hyped!", "Looks promising."], username: "CODFanatic", date: "2024-12-28", time: "4:00 PM" },
+            { title: "Best Horror Games of 2024", content: "Scare yourself silly with these thrilling horror games.", likes: 11, comments: ["Terrifying!", "Perfect for Halloween."], username: "HorrorLover", date: "2024-12-28", time: "4:30 PM" },
+            { title: "Guide to Cross-Platform Play", content: "Play with your friends across platforms with this guide.", likes: 8, comments: ["Cross-play is awesome!", "Thanks for the info."], username: "CrossPlayHero", date: "2024-12-28", time: "5:00 PM" }
+        ];
+
+        // Function to render posts
+        function renderPosts() {
+            postsContainer.innerHTML = '';
+            posts.forEach((post, index) => {
+                const postElement = document.createElement('div');
+                postElement.classList.add('post');
+                postElement.innerHTML = `
+                    <h4>${post.title}</h4>
+                    <p>${post.content}</p>
+                    <p class="meta">Posted by ${post.username} on ${post.date} at ${post.time}</p>
+                    <div class="post-actions">
+                        <button class="like-button" onclick="likePost(${index})">
+                            <span>❤️</span> Like (${post.likes})
+                        </button>
+                        <button class="comment-button" onclick="toggleComments(${index})">
+                            💬 Comments (${post.comments.length})
+                        </button>
+                    </div>
+                    <div class="comments-section" id="comments-${index}" style="display: none;">
+                        <div class="comments-list">
+                            ${post.comments.map(comment => `<p>${comment}</p>`).join('')}
+                        </div>
+                        <input type="text" id="commentInput-${index}" placeholder="Add a comment...">
+                        <button onclick="addComment(${index})">Add Comment</button>
+                    </div>
+                `;
+                postsContainer.appendChild(postElement);
+            });
+        }
+
+        // Handle post submission
+        postForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const title = document.getElementById('postTitle').value;
+            const content = document.getElementById('postContent').value;
+            const date = new Date();
+            const formattedDate = date.toLocaleDateString();
+            const formattedTime = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+            if (title && content) {
+                posts.push({ title, content, likes: 0, comments: [], username: "CurrentUser", date: formattedDate, time: formattedTime });
+                renderPosts();
+                postForm.reset();
+            }
+        });
+
+        // Like a post
+        function likePost(index) {
+            posts[index].likes += 1;
+            renderPosts();
+        }
+
+        // Toggle comments section
+        function toggleComments(index) {
+            const commentsSection = document.getElementById(`comments-${index}`);
+            commentsSection.style.display = commentsSection.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Add a comment
+        function addComment(index) {
+            const commentInput = document.getElementById(`commentInput-${index}`);
+            const comment = commentInput.value.trim();
+            if (comment) {
+                posts[index].comments.push(comment);
+                renderPosts();
+            }
+        }
+
+        // Initial render
+        renderPosts();
+    </script>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: "Verdana", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+                nav ul li a {
+                    text-decoration: none;
+                    color: #e0e0e0;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                }
+
+                    nav ul li a.active, nav ul li a:hover {
+                        color: #1e90ff;
+                        border-bottom: 2px solid #1e90ff;
+                    }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .highlight {
+            color: #1e90ff;
+        }
+
+        .post-creation {
+            margin-bottom: 20px;
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+            .post-creation input, .post-creation textarea, .post-creation button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .post-creation button {
+                background-color: #1e90ff;
+                color: #ffffff;
+                cursor: pointer;
+            }
+
+                .post-creation button:hover {
+                    background-color: #1c86ee;
+                }
+
+        .newsfeed {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .post {
+            background: #2c2c2c;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            margin-top: 5px;
+        }
+
+        .post-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .like-button {
+            background-color: #1e90ff;
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .like-button span {
+                font-size: 16px;
+            }
+
+            .like-button:hover {
+                background-color: #1c86ee;
+            }
+
+        .comment-button {
+            background-color: #1e90ff;
+            color: #ffffff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .comment-button:hover {
+                background-color: #1c86ee;
+            }
+
+        .comments-section {
+            margin-top: 10px;
+            background: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .comments-list p {
+            background: #2c2c2c;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+

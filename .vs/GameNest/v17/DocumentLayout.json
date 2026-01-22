@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Acer\\source\\repos\\GameNest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\friends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\friends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\event.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|c:\\users\\acer\\source\\repos\\gamenest\\gamenest\\pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74579F67-6C99-46DC-B3EC-735C085DE1B5}|GameNest\\GameNest.csproj|solutionrelative:gamenest\\pages\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Friends.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Friends.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Friends.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Friends.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Friends.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAqwD0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T14:57:35.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Games.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Games.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Games.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Games.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Games.cshtml",
+              "ViewState": "AgIAABIBAAAAAAAAAAAAALYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T22:36:33.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Event.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Event.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Event.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Event.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Event.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwLkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T12:17:16.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Home.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Home.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Home.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Home.cshtml",
+              "ViewState": "AgIAAEMBAAAAAAAAAIBJwDAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T16:07:39.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Profile.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Profile.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Profile.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwDsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T11:32:29.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "GameNest\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\GameNest\\GameNest\\Pages\\Index.cshtml",
+              "RelativeToolTip": "GameNest\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T11:11:28.325Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+﻿@page
+@model GameNest.Pages.EventModel
+@{
+    ViewData["Title"] = "Event";
+
+
+}
+
+
+<body>
+    <div class="hero_area">
+
+
+
+
+
+
+
+
+
+        <div class="hero_area">
+            <!-- Header Section -->
+
+            <header class="header_section">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a class="navbar-brand" asp-area="" asp-page="/Home">
+                            <h1 style="color: #1e90ff;">🎮 GameNest</h1>
+                        </a>
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item ">
+                                    <a class="nav-link" asp-area="" asp-page="/Home">Home</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" asp-area="" asp-page="/Profile">Profile</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" asp-area="" asp-page="/Event">Event</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" asp-area="" asp-page="/Games">Games</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-page="/Friends">Friends</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+        </div>
+
+    
+
+        <main>
+            <section id="events">
+                <div class="container">
+                    <h2>🎉 Upcoming Events</h2>
+                    <p>Join, create, and explore exciting gaming events happening worldwide!</p>
+
+                    <!-- Event List -->
+                    <div id="eventList" class="event-list">
+                        <!-- Dynamic content populated by JavaScript -->
+                    </div>
+
+                    <!-- Create New Event -->
+                    <div class="create-event">
+                        <h3>Create a New Event</h3>
+                        <form id="eventForm">
+                            <input type="text" id="eventTitle" placeholder="Event Title" required>
+                            <input type="date" id="eventDate" required>
+                            <textarea id="eventDetails" placeholder="Event Details" required></textarea>
+                            <button type="submit">Create Event</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="leaderboard">
+                <div class="leaderboard">
+                    <h2>🎮 Gamer Leaderboard</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>ID</th>
+                                <th>Scores</th>
+                                <th>Matches</th>
+                                <th>Winrate</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="rank">#1</td>
+                                <td class="name">Farah Ahmed</td>
+                                <td class="id">00285130971</td>
+                                <td class="scores">960,883</td>
+                                <td class="matches">7,920</td>
+                                <td class="winrate">92.04%</td>
+                                <td class="region">Spain</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#2</td>
+                                <td class="name">Mohamed Khaled</td>
+                                <td class="id">00345127632</td>
+                                <td class="scores">890,567</td>
+                                <td class="matches">7,600</td>
+                                <td class="winrate">89.15%</td>
+                                <td class="region">UAE</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#3</td>
+                                <td class="name">Ahmed Moatasem</td>
+                                <td class="id">00456198374</td>
+                                <td class="scores">745,123</td>
+                                <td class="matches">6,820</td>
+                                <td class="winrate">85.00%</td>
+                                <td class="region">China</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#4</td>
+                                <td class="name">Jana Mahmoud</td>
+                                <td class="id">00561207839</td>
+                                <td class="scores">698,420</td>
+                                <td class="matches">6,500</td>
+                                <td class="winrate">84.00%</td>
+                                <td class="region">Argentina</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#5</td>
+                                <td class="name">Soha Essam</td>
+                                <td class="id">00671234856</td>
+                                <td class="scores">689,213</td>
+                                <td class="matches">6,400</td>
+                                <td class="winrate">83.25%</td>
+                                <td class="region">Italy</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#6</td>
+                                <td class="name">Ali Mohab</td>
+                                <td class="id">00782356749</td>
+                                <td class="scores">672,550</td>
+                                <td class="matches">6,300</td>
+                                <td class="winrate">82.95%</td>
+                                <td class="region">Lebanon</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#7</td>
+                                <td class="name">Nour Nader</td>
+                                <td class="id">00893468912</td>
+                                <td class="scores">650,745</td>
+                                <td class="matches">6,200</td>
+                                <td class="winrate">81.80%</td>
+                                <td class="region">Egypt</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#8</td>
+                                <td class="name">Jana Ahmed</td>
+                                <td class="id">00904578123</td>
+                                <td class="scores">615,432</td>
+                                <td class="matches">6,100</td>
+                                <td class="winrate">80.00%</td>
+                                <td class="region">Morocco</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#9</td>
+                                <td class="name">Ahmed Mohsen</td>
+                                <td class="id">01015687235</td>
+                                <td class="scores">580,237</td>
+                                <td class="matches">5,900</td>
+                                <td class="winrate">78.50%</td>
+                                <td class="region">Tunisia</td>
+                            </tr>
+                            <tr>
+                                <td class="rank">#10</td>
+                                <td class="name">Malak Mohamed</td>
+                                <td class="id">01126798346</td>
+                                <td class="scores">560,300</td>
+                                <td class="matches">5,800</td>
+                                <td class="winrate">77.00%</td>
+                                <td class="region">Egypt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 <span class="highlight">GameNest</span>. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            const eventForm = document.getElementById('eventForm');
+            const eventList = document.getElementById('eventList');
+
+            // Initial events
+            const events = [
+                { title: "Cyber Clash Tournament", date: "2024-03-25", details: "Join the ultimate battle for glory!" },
+                { title: "Space Odyssey Challenge", date: "2024-04-10", details: "Explore the stars in this exciting adventure event." }
+            ];
+
+            // Function to render events
+            function renderEvents() {
+                eventList.innerHTML = '';
+                events.forEach((event) => {
+                    const eventElement = document.createElement('div');
+                    eventElement.classList.add('event');
+                    eventElement.innerHTML = `
+                                <h4>${event.title}</h4>
+                                <p><strong>Date:</strong> ${event.date}</p>
+                                <p>${event.details}</p>
+                            `;
+                    eventList.appendChild(eventElement);
+                });
+            }
+
+            // Handle form submission
+            eventForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const title = document.getElementById('eventTitle').value;
+                const date = document.getElementById('eventDate').value;
+                const details = document.getElementById('eventDetails').value;
+
+                if (title && date && details) {
+                    events.push({ title, date, details });
+                    renderEvents();
+                    eventForm.reset();
+                }
+            });
+
+            // Initial render
+            renderEvents();
+        </script>
+
+        <style>
+            /* Global Styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #333333;
+                color: white;
+            }
+
+            body {
+                font-family: "Verdana", sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #121212;
+                color: #e0e0e0;
+            }
+
+            header {
+                background-color: #1f1f1f;
+                padding: 20px 0;
+                text-align: center;
+                border-bottom: 1px solid #333;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                margin: 10px 0;
+            }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #e0e0e0;
+                font-weight: bold;
+                padding: 5px 10px;
+            }
+
+            nav ul li a.active, nav ul li a:hover {
+                color: #1e90ff;
+                border-bottom: 2px solid #1e90ff;
+            }
+
+            main {
+                padding: 40px 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: #007bff;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+                margin-bottom: 20px;
+            }
+
+            .event-list {
+                margin-top: 20px;
+            }
+
+            .event {
+                background-color: #444444;
+                padding: 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+
+                .event h4 {
+                    color: #007bff;
+                    margin: 0 0 10px;
+                }
+
+                .event p {
+                    margin: 5px 0;
+                }
+
+                .event button {
+                    background-color: #dc3545;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                    .event button:hover {
+                        background-color: #b52a3b;
+                    }
+
+            .create-event {
+                margin-top: 40px;
+                padding: 20px;
+                background-color: #444444;
+                border-radius: 8px;
+            }
+
+                .create-event h3 {
+                    margin-bottom: 20px;
+                    color: #007bff;
+                }
+
+                .create-event input, .create-event textarea, .create-event button {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                }
+
+                .create-event button {
+                    background-color: #007bff;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                    .create-event button:hover {
+                        background-color: #0056b3;
+                    }
+
+            .leaderboard {
+                margin-top: 40px;
+                background-color: #444444;
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+                .leaderboard h2 {
+                    margin-bottom: 20px;
+                    color: #007bff;
+                }
+
+                .leaderboard table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    color: white;
+                }
+
+                .leaderboard th, .leaderboard td {
+                    padding: 10px;
+                    border-bottom: 1px solid #555;
+                    text-align: left;
+                }
+
+                .leaderboard th {
+                    background-color: #007bff;
+                    color: white;
+                }
+
+                .leaderboard tbody tr:nth-child(odd) {
+                    background-color: #555;
+                }
+
+                .leaderboard tbody tr:nth-child(even) {
+                    background-color: #666;
+                }
+
+            footer {
+                background-color: #222;
+                padding: 20px 0;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+                footer p {
+                    margin: 0;
+                    font-size: 0.9rem;
+                    color: #ccc;
+                }
+
+                    footer p .highlight {
+                        color: #007bff;
+                    }
+        </style>
+
+
+
+
+
+
+
+</body>
